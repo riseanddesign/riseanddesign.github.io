@@ -7021,4 +7021,17 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  background-color: red; }
+  background-color: white; }
+
+.row {
+  padding: 2rem; }
+
+.algonquinGreenLight {
+  background-color: #42B029; }
+
+.algonquinGreenDark {
+  color: #006937; }
+
+.btn-primary {
+  background-color: #42B029;
+  border: 2px solid #006937; }

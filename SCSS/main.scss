@@ -1,5 +1,22 @@
 // import _bootstrap.scss partial file from the node_modules
+@import 'custom-variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 body {
-  background-color: red;
+  background-color: white;
+}
+.row{
+  padding:2rem;
+}
+
+.algonquinGreenLight{
+  background-color:$algonquinGreenLight;
+}
+
+.algonquinGreenDark{
+color:$algonquinGreenDark;
+}
+
+.btn-primary{
+  background-color:$algonquinGreenLight;
+  border:2px solid $algonquinGreenDark;
 }
