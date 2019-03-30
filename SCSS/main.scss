@@ -4,27 +4,33 @@
 body {
   background-color: white;
 }
+
 .row{
   padding:2rem;
 }
 
+//class to make background-color light green
 .algonquinGreenLight{
   background-color:$algonquinGreenLight;
 }
 
+//class to make text color dark green
 .algonquinGreenDark{
 color:$algonquinGreenDark;
 }
 
+//change bootstrap class to be chosen colors
 .btn-primary{
   background-color:$algonquinGreenLight;
   border:2px solid $algonquinGreenDark;
 }
 
+//chaning styles of bootstrap cards
 .card{
 margin:2rem;
 }
 
+//nav links
 .nav-item{
   a{
     color:white;
@@ -32,7 +38,8 @@ margin:2rem;
   }
 }
 
-hamburger{
-  margin:40px;
-  background-color:red;
+//changing size of bootstrap slideshow
+.carousel-inner{
+  width:100%;
+  max-height: 600px !important;
 }
