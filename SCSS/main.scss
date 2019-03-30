@@ -32,7 +32,20 @@ color:$algonquinGreenDark;
 
 //chaning styles of bootstrap cards
 .card{
-margin:2rem;
+margin:1rem;
+    .card-text{
+      color:white;
+    }
+    .card-title{
+      color:white;
+      font-size:2rem;
+    }
+
+    .card-top{
+      height:50%;
+      margin:5px;
+      overflow:hidden;
+    }
 }
 
 //nav links

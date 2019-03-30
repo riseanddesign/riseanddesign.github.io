@@ -7040,7 +7040,16 @@ body {
   border: 2px solid #006937; }
 
 .card {
-  margin: 2rem; }
+  margin: 1rem; }
+  .card .card-text {
+    color: white; }
+  .card .card-title {
+    color: white;
+    font-size: 2rem; }
+  .card .card-top {
+    height: 50%;
+    margin: 5px;
+    overflow: hidden; }
 
 .nav-item a {
   color: white;
