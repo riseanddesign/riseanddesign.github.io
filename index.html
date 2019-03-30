@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="./css/min/main.css">
   </head>
   <body>
-
-    <ul class="nav justify-content-center navbar algonquinGreenLight">
- <li class="nav-item">
+    <!--navbar that turns to hamburger in mobile view-->
+<nav class="d-none d-lg-block d-xl-block">
+    <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
+ <li class="nav-item ">
    <a class="nav-link active" href="#">Home</a>
  </li>
  <li class="nav-item">
@@ -28,11 +29,41 @@
  <li class="nav-item">
    <a class="nav-link" href="#" >Algonquin College</a>
  </li>
- <form class="form-inline my-2 my-lg-0">
-   <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-   </form>
 </ul>
+</nav>
+<!--navbar-->
+<!--hambuger menu-->
+<div class="pos-f-t  d-lg-none text-center">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
+   <li class="nav-item col-sm-12">
+     <a class="nav-link active" href="#">Home</a>
+   </li>
+   <li class="nav-item col-sm-12 ">
+     <a class="nav-link" href="#">Services</a>
+   </li>
+   <li class="nav-item col-sm-12">
+     <a class="nav-link" href="#">Products</a>
+   </li>
+   <li class="nav-item col-sm-12">
+     <a class="nav-link" href="#" >Contact</a>
+   </li>
+   <li class="nav-item col-sm-12">
+     <a class="nav-link" href="#" >Algonquin College</a>
+   </li>
+
+  </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+<!--hambuger menu end-->
 
 <div class="row d-flex">
   <div class="col-lg-4 col-sm-6">
@@ -85,10 +116,11 @@
           </div>
       </div>
 
-
-
-<div class="row">
-<div class=" card text-center col-12 col-lg-4" style="width: 30rem;">
+<div class="row justify-content-center">
+  <h2>Most Popular Services</h2>
+</div>
+<div class="row justify-content-center">
+<div class=" card text-center col-12 col-lg-3" style="width: 30rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -97,7 +129,10 @@
   </div>
 </div>
 
-<div class="card text-center col-12 col-lg-4" style="width: 30rem;">
+
+
+
+<div class="card text-center col-12 col-lg-3" style="width: 30rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -106,7 +141,7 @@
   </div>
 </div>
 
-<div class="card text-center col-12 col-lg-4" style="width: 30rem;">
+<div class="card text-center col-12 col-lg-3" style="width: 30rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -114,6 +149,10 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
+</div>
+
+<div class="row justify-content-center">
+  <a href="#" class="btn btn-primary">View All Services</a>
 </div>
 
 <div class="row">
@@ -133,7 +172,7 @@
 
 </div>
 
-<ul id="footer" class="nav justify-content-center navbar algonquinGreenLight">
+<ul id="footer" class="nav justify-content-center navbar navbar-dark bg-dark">
 <li class="nav-item">
   <a class="nav-link active" href="#">Home</a>
 </li>
@@ -154,5 +193,9 @@
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
   </form>
 </ul>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

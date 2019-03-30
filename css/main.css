@@ -7035,3 +7035,14 @@ body {
 .btn-primary {
   background-color: #42B029;
   border: 2px solid #006937; }
+
+.card {
+  margin: 2rem; }
+
+.nav-item a {
+  color: white;
+  font-size: 1.5rem; }
+
+hamburger {
+  margin: 40px;
+  background-color: red; }
