@@ -7026,6 +7026,9 @@ body {
 .row {
   padding: 2rem; }
 
+.fab {
+  width: 50px; }
+
 .algonquinGreenLight {
   background-color: #42B029; }
 
