@@ -1,0 +1,23 @@
+Copy and paste  :))
+<!--" top.png " I uploaded to the development branch, you can downlond or when you merge the development and master branchs, it will automatic be there.-->
+
+1.
+Add to the HTML before "<!--slider from bootstrap-->" this line :
+<!-- add "to the top" -->
+<a class="top" href="#"><img src="./images/top.png" alt="Top"></a>
+
+2.
+Add to the SCSS:
+//to the Top
+.top{
+position: fixed;
+z-index: 3;
+Bottom: 40px;
+Right: 40px;
+}
+
+3.
+.top:hover {
+    transition: transform .25s ease-in-out;
+    transform: scale(1.2);
+}
