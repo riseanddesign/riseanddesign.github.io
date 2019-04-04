@@ -7093,3 +7093,13 @@ h5, h6 {
 
 .soldOut {
   background-color: gray; }
+
+.top {
+  position: fixed;
+  z-index: 3;
+  Bottom: 40px;
+  Right: 40px; }
+
+.top:hover {
+  transition: transform .25s ease-in-out;
+  transform: scale(1.2); }

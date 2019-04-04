@@ -92,3 +92,17 @@ h5,h6{margin-top: 8px;}
 
 //chang the soldOut color
 .soldOut{background-color: gray;}
+
+
+//to the Top
+.top{
+position:fixed;
+z-index: 3;
+Bottom: 40px;
+Right: 40px;
+}
+
+.top:hover {
+    transition: transform .25s ease-in-out;
+    transform: scale(1.2);
+}
