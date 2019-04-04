@@ -61,3 +61,34 @@ margin:1rem;
   width:100%;
   max-height: 600px !important;
 }
+
+// -------------------------------------------------------------
+
+//change to the black color of the second row
+.blackbox
+{background-color: black;
+  padding:10px;}
+
+//change the text color
+.col
+{background-color: black;
+color: white;}
+
+//change to the full
+.btn-primary{border: 0;
+padding: 10px 100px;
+margin: 10px;
+margin-right: 0px;}
+
+//change thridRow
+.thridRow{padding: 10px 0;}
+
+.bg-light{padding:0;}
+
+.mx-lg-n5{padding:0;}
+h5,h6{margin-top: 8px;}
+.py-3{padding:0}
+.px-lg-5{padding:10px;}
+
+//chang the soldOut color
+.soldOut{background-color: gray;}
