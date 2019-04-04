@@ -14,6 +14,15 @@ body {
   width:50px;
 }
 
+//seperator
+.seperator{
+  display: inline-block;
+  width: 56px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 1.5rem 0;
+}
+
 //class to make background-color light green
 .algonquinGreenLight{
   background-color:$algonquinGreenLight;
@@ -28,6 +37,11 @@ color:$algonquinGreenDark;
 .btn-primary{
   background-color:$algonquinGreenLight;
   border:2px solid $algonquinGreenDark;
+}
+.btn-secondary{
+  background-color: $white;
+  border-color: #ffffff;
+  color: $algonquinGreenLight;
 }
 
 //chaning styles of bootstrap cards
@@ -105,4 +119,55 @@ Right: 40px;
 .top:hover {
     transition: transform .25s ease-in-out;
     transform: scale(1.2);
+}
+
+
+// Service page css
+.service_banner {
+  position: relative;
+  z-index: 1;
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background-color: rgba(66, 176, 41, 0.50);
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: contrast(130%);
+  }
+  .image_overlay_text {
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+  }
+  .gradient {
+    background: $gradient-color;
+    padding: 4rem 3rem 0;
+  }
+}
+.service_content {
+  padding: 18rem 0 1rem;
+  .seperator {
+    background-color: $algonquinGreenLight;
+  }
+  img{
+    position: relative;
+    z-index: 2;
+  }
+  .img-overlay:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: $gradient-color;
+  }
 }
