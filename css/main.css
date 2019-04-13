@@ -7045,7 +7045,12 @@ body {
 
 .btn-primary {
   background-color: #42B029;
-  border: 2px solid #006937; }
+  border: 2px solid #006937;
+  padding: 10px 10px !important; }
+
+.btn-primary:hover {
+  background-color: white !important;
+  color: black !important; }
 
 .btn-secondary {
   background-color: #ffffff;
