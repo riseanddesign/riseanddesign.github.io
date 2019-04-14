@@ -18,68 +18,70 @@
 <nav class="d-none d-lg-block d-xl-block">
     <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
  <li class="nav-item ">
-   <a class="nav-link active" href="index.html">Home</a>
+   <a class="nav-link active" data-hover="Home" href="index.html">Home</a>
  </li>
  <li class="nav-item">
-   <a class="nav-link" href="services.html">Services</a>
+   <a class="nav-link" data-hover="Services" href="services.html">Services</a>
  </li>
  <li class="nav-item">
-   <a class="nav-link" href="products.html">Products</a>
+   <a class="nav-link" data-hover="Products" href="products.html">Products</a>
  </li>
  <li class="nav-item">
-   <a class="nav-link" href="contact.html" >Contact</a>
+   <a class="nav-link" data-hover="Contact" href="contact.html" >Contact</a>
  </li>
  <li class="nav-item">
-   <a class="nav-link" href="#" >Algonquin College</a>
+   <a class="nav-link" data-hover="Algonquin College" href="#" >Algonquin College</a>
  </li>
 </ul>
+
 </nav>
 
 <!--hambuger menu for mobile view-->
 <div class="pos-f-t  d-lg-none text-center">
   <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
+    <div class="bg-dark p-lg-4">
       <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
    <li class="nav-item col-sm-12">
-     <a class="nav-link active" href="index.html">Home</a>
+     <a class="nav-link active" data-hover="Home" href="index.html">Home</a>
    </li>
    <li class="nav-item col-sm-12 ">
-     <a class="nav-link" href="services.html">Services</a>
+     <a class="nav-link" data-hover="Services" href="services.html">Services</a>
    </li>
    <li class="nav-item col-sm-12">
-     <a class="nav-link" href="products.html">Products</a>
+     <a class="nav-link" data-hover="Products" href="products.html">Products</a>
    </li>
    <li class="nav-item col-sm-12">
-     <a class="nav-link" href="contact.html" >Contact</a>
+     <a class="nav-link" data-hover="Contact" href="contact.html" >Contact</a>
    </li>
    <li class="nav-item col-sm-12">
-     <a class="nav-link" href="#" >Algonquin College</a>
+     <a class="nav-link" data-hover="Algonquin College" href="#" >Algonquin College</a>
    </li>
-
   </ul>
     </div>
   </div>
-  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center py-3">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
       aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="fa fa-bars"></span>
     </button>
   </nav>
 </div>
 <!--hambuger menu end-->
 <!--navbar-->
-
-<div class="row d-flex">
-  <div class="col-lg-4 col-sm-6">
-    <img src="../images/logo.png" width="100%"class="d-block " alt="...">
-  </div>
-  <div class="col-lg-8 col-sm-6 text-center d-md-flex align-items-center justify-content-end ">
-    <h1 class="algonquinGreenDark">Home</h1>
-  </div>
+<div class="container-fluid">
+  <div class="row d-flex p-lg-4 p-sm-3 py-3 align-items-center">
+    <div class="col-lg-4 col-sm-6 col-md-4 col-7">
+      <img src="../images/logo.png" class="img-fluid logo" alt="logo">
+    </div>
+    <div class="col-lg-8 col-sm-6 col-md-8 col-5 text-right text-sm-right d-md-flex align-items-center justify-content-end ">
+      <h1 class="algonquinGreenDark m-0">Home</h1>
+    </div>
+  </div> 
 </div>
 
+
 <!--slider from bootstrap-->
-<div id="mainCarousel" class=" container-fluid carousel slide " data-ride="carousel">
+<div id="mainCarousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../imgs/greengraphic.jpg" width="100%" class="d-block w-10" alt="...">
