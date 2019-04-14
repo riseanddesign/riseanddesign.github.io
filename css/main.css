@@ -7024,11 +7024,16 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   background-color: white; }
 
-.row {
-  padding: 2rem; }
-
 .fab {
   width: 50px; }
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 2rem; } }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem; } }
 
 .seperator {
   display: inline-block;
@@ -7064,9 +7069,47 @@ body {
     margin: 5px;
     overflow: hidden; }
 
-.nav-item a {
-  color: white;
-  font-size: 1.5rem; }
+.navbar .navbar-toggler {
+  border-color: #42B029;
+  border-width: 2px;
+  padding: 10px 20px;
+  outline: none !important;
+  cursor: pointer; }
+  .navbar .navbar-toggler .fa-bars {
+    font-size: 24px;
+    color: #42B029; }
+
+.navbar .nav-item a {
+  position: relative;
+  padding: 0;
+  margin: 15px 25px;
+  color: #42B029;
+  font-size: 1.5rem;
+  text-shadow: none; }
+  .navbar .nav-item a:before {
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s; }
+  .navbar .nav-item a:hover {
+    outline: none; }
+    .navbar .nav-item a:hover:before {
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      transform: scale(0.9);
+      opacity: 0; }
+  @media (max-width: 991px) {
+    .navbar .nav-item a {
+      font-size: 1rem;
+      margin: 10px 10px; } }
+
+.logo {
+  max-width: 300px; }
+  @media (max-width: 991px) {
+    .logo {
+      max-width: 100%; } }
 
 .carousel-inner {
   width: 100%;

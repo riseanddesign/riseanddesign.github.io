@@ -5,13 +5,19 @@ body {
   background-color: white;
 }
 
-.row{
-  padding:2rem;
-}
-
 //icons
 .fab{
   width:50px;
+}
+
+//headings
+h1 {
+  @media (max-width: 991px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 }
 
 //seperator
@@ -63,10 +69,54 @@ margin:1rem;
 }
 
 //nav links
-.nav-item{
-  a{
-    color:white;
-    font-size: 1.5rem;
+.navbar {
+  .navbar-toggler {
+    border-color: $algonquinGreenLight;
+    border-width: 2px;
+    padding: 10px 20px;
+    outline: none !important;
+    cursor: pointer;
+    .fa-bars {
+      font-size: 24px;
+      color: $algonquinGreenLight;
+    }
+  }
+  .nav-item{
+    a{
+      position: relative;
+      padding: 0;
+      margin: 15px 25px;
+      color: $algonquinGreenLight;
+      font-size: 1.5rem;
+      text-shadow: none;
+      &:before {
+        color: #fff;
+        content: attr(data-hover);
+        position: absolute;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+        transition: transform 0.3s, opacity 0.3s;
+      }
+      &:hover{
+        outline: none;
+        &:before {
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          transform: scale(0.9);
+          opacity: 0;
+        }
+      }
+      @media (max-width: 991px) {
+        font-size: 1rem;
+        margin: 10px 10px;  
+      }
+    }
+  }
+}
+.logo {
+  max-width: 300px;
+  @media (max-width: 991px) {
+    max-width: 100%;
   }
 }
 
@@ -79,20 +129,23 @@ margin:1rem;
 // -------------------------------------------------------------
 
 //change to the black color of the second row
-.blackbox
-{background-color: black;
+.blackbox {
+  background-color: black;
   padding:10px;}
 
 //change the text color
-.col
-{background-color: black;
-color: white;}
+.col {
+  background-color: black;
+  color: white;
+}
 
 //change to the full
-.btn-primary{border: 0;
-padding: 10px 100px;
-margin: 10px;
-margin-right: 0px;}
+.btn-primary {
+  border: 0;
+  padding: 10px 100px;
+  margin: 10px;
+  margin-right: 0px;
+}
 
 //change thridRow
 .thridRow{padding: 10px 0;}
