@@ -1,6 +1,7 @@
 // import _bootstrap.scss partial file from the node_modules
 @import 'custom-variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/aos/src/sass/aos.scss';
 body {
   background-color: white;
 }
@@ -105,8 +106,10 @@ h5,h6{margin-top: 8px;}
 .px-lg-5{padding:10px;}
 
 //chang the soldOut color
-.soldOut{background-color: gray;}
-
+.soldOut{background-color: gray;
+width:100%;}
+.soldOut :hover{background-color: gray;
+}
 
 //to the Top
 .top{
