@@ -43,7 +43,14 @@ color:$algonquinGreenDark;
 .btn-primary{
   background-color:$algonquinGreenLight;
   border:2px solid $algonquinGreenDark;
+  padding: 10px 10px !important ;
 }
+.btn-primary:hover{
+  background-color:white !important;
+  color:black !important;
+}
+
+
 .btn-secondary{
   background-color: $white;
   border-color: #ffffff;
