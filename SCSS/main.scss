@@ -10,6 +10,12 @@ body {
   width:50px;
 }
 
+//making a class to add margin top and Bottom
+.giveMeSpace{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
 //headings
 h1 {
   @media (max-width: 991px) {
@@ -115,7 +121,7 @@ margin:1rem;
       }
       @media (max-width: 991px) {
         font-size: 1rem;
-        margin: 10px 10px;  
+        margin: 10px 10px;
       }
     }
   }

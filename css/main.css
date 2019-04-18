@@ -7027,6 +7027,10 @@ body {
 .fab {
   width: 50px; }
 
+.giveMeSpace {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 @media (max-width: 991px) {
   h1 {
     font-size: 2rem; } }
