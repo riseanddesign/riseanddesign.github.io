@@ -1,0 +1,21 @@
+/* FreightDispMedium Font */
+
+@font-face {
+    font-family: 'freightDispMedium';
+    src: url('../fonts/freight_disp_medium.woff2') format('woff2'),
+         url('../fonts/freight_disp_medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GothamLightRegular Font */
+@font-face {
+	font-family: 'GothamLightRegular';
+	src: url('../fonts/Gotham Light Regular.eot');
+    src: local('☺'), url('../fonts/Gotham Light Regular.woff') format('woff'), 
+    url('../fonts/Gotham Light Regular.ttf') format('truetype'), 
+    url('../fonts/Gotham Light Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
