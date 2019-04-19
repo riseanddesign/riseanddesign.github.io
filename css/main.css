@@ -7720,8 +7720,6 @@ body {
   max-height: 600px !important; }
 
 @media (max-width: 575.98px) {
-  .logo-img {
-    width: 100%; }
   p {
     font-size: 1.2rem; }
   .h5 {

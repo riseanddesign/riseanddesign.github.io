@@ -2,6 +2,7 @@
 @import 'custom-variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/aos/src/sass/aos.scss';
+
 body {
     background-color: white;
 }
@@ -82,9 +83,7 @@ body {
 // product css
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .logo-img {
-        width: 100%;
-    }
+
     p {
         font-size: 1.2rem;
     }
