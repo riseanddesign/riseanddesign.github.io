@@ -7762,6 +7762,24 @@ body {
 .buy-me {
   background-color: #42B029; }
 
+.btn-lg, .btn-group-lg > .btn {
+  background-color: #42B029;
+  color: white; }
+
+.rounded {
+  background-color: #42B029;
+  height: 32.8px;
+  border-radius: 5px !important;
+  margin: 1.6px;
+  padding: 1.6px  16px;
+  text-align: center; }
+
+.btn:disabled {
+  width: 100%;
+  height: 32.8px;
+  margin: 1.6px;
+  padding: 1.6px  16px; }
+
 .top {
   position: fixed;
   z-index: 3;
