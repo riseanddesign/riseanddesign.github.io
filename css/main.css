@@ -7671,9 +7671,6 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background-color: white; }
 
-.row {
-  padding: 2rem; }
-
 .fab {
   width: 50px; }
 
@@ -7756,9 +7753,6 @@ h2 {
     margin: 5px;
     overflow: hidden; }
 
-.nav-item a {
-  color: white;
-  font-size: 1.5rem; }
 .navbar .navbar-toggler {
   border-color: #42B029;
   border-width: 2px;
@@ -7935,63 +7929,8 @@ h5, h6 {
 .px-lg-5 {
   padding: 10px; }
 
-@media (min-width: 576px) {
-  .p-2 {
-    padding: 0 !important; }
-  .row {
-    padding: 0 0.5rem 0 0.5rem;
-    margin: 0 auto; }
-  .buy-me:hover {
-    background-color: blue !important; }
-  .buy-me:active {
-    background-color: blue; }
-  .buy-me {
-    background-color: #42B029 !important; }
-  .btn-lg, .btn-group-lg > .btn {
-    background-color: #42B029;
-    color: white; }
-  .rounded {
-    background-color: #42B029 !important;
-    height: 27px;
-    border-radius: 5px !important;
-    margin: 1.6px;
-    padding: 1.6px 16px;
-    text-align: center; }
-  .text-black-box {
-    background-color: black; }
-  .col-12 {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    color: white; }
-  .col-sm-6 {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    color: white; }
-  .btn-primary {
-    border: 0;
-    padding: 0.1rem 1rem;
-    margin: 0.1rem; }
-  .h5 {
-    border: 0;
-    margin: 1rem;
-    padding: 0; }
-  .row {
-    border: 0;
-    margin: 0;
-    padding: 0; }
-  .button-row {
-    margin: 10px; }
-  .paraphraes {
-    border: 0;
-    margin: 0rem;
-    padding: 0px 16px 16px 16px; }
-  .btn:disabled {
-    width: 100%;
-    height: 32.8px;
-    margin: 1.6px;
-    padding: 1.6px 16px; } }
+.soldOut {
+  background-color: gray; }
 
 .service_banner {
   position: relative;
