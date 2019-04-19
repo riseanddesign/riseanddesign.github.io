@@ -7677,6 +7677,10 @@ body {
 .fab {
   width: 50px; }
 
+.giveMeSpace {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 h1 {
   font-family: "GothamLightRegular";
   font-weight: bold; }
@@ -7719,6 +7723,9 @@ h2 {
 .btn-primary {
   background-color: #42B029;
   border: 2px solid #006937; }
+  .btn-primary:hover {
+    background-color: white !important;
+    color: black !important; }
 
 .btn-secondary {
   font-family: "GothamLightRegular";
@@ -7763,13 +7770,13 @@ h2 {
     color: #42B029; }
 
 .navbar .nav-item a {
-  font-family: "GothamLightRegular";
   position: relative;
   padding: 0;
   margin: 15px 25px;
   color: #42B029;
   font-size: 1.5rem;
-  text-shadow: none; }
+  text-shadow: none;
+  font-family: "GothamLightRegular"; }
   .navbar .nav-item a:before {
     color: #fff;
     content: attr(data-hover);
@@ -7791,9 +7798,13 @@ h2 {
 
 .logo {
   max-width: 300px; }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     .logo {
       max-width: 100%; } }
+
+#mainCarousel {
+  width: 90%;
+  margin-bottom: 40px; }
 
 .carousel-inner {
   width: 100%;
@@ -7806,9 +7817,6 @@ h2 {
     font-size: 1.4rem; }
   .container {
     background-color: white; }
-  .row {
-    padding: 0 0.5rem 0 0.5rem;
-    margin: 0 auto; }
   .buy-me:hover {
     background-color: blue !important; }
   .buy-me:active {
@@ -7827,15 +7835,7 @@ h2 {
     text-align: center; }
   .text-black-box {
     background-color: black; }
-  .col-12 {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    color: white; }
-  .col-sm-6 {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  .blackbox .col-12 .blackbox .col-sm-6 {
     color: white; }
   .btn-primary {
     border: 0;
@@ -7844,10 +7844,6 @@ h2 {
   .h5 {
     border: 0;
     margin: 1rem;
-    padding: 0; }
-  .row {
-    border: 0;
-    margin: 0;
     padding: 0; }
   .button-row {
     margin: 10px; }
@@ -7862,6 +7858,82 @@ h2 {
     padding: 1.6px 16px; }
   .p-2 {
     padding: 0 !important; } }
+
+@media (min-width: 576px) {
+  .p-2 {
+    padding: 0 !important; }
+  .buy-me:hover {
+    background-color: blue !important; }
+  .buy-me:active {
+    background-color: blue; }
+  .buy-me {
+    background-color: #42B029 !important; }
+  .btn-lg, .btn-group-lg > .btn {
+    background-color: #42B029;
+    color: white; }
+  .rounded {
+    background-color: #42B029 !important;
+    height: 27px;
+    border-radius: 5px !important;
+    margin: 1.6px;
+    padding: 1.6px 16px;
+    text-align: center; }
+  .text-black-box {
+    background-color: black; }
+  .blackbox .col-12,
+  .blackbox .col-sm-6 {
+    color: white; }
+  .btn-primary {
+    border: 0;
+    padding: 0.1rem 1rem;
+    margin: 0.1rem; }
+  .h5 {
+    border: 0;
+    margin: 1rem;
+    padding: 0; }
+  .button-row {
+    margin: 10px; }
+  .paraphraes {
+    border: 0;
+    margin: 0rem;
+    padding: 0px 16px 16px 16px; }
+  .btn:disabled {
+    width: 100%;
+    height: 32.8px;
+    margin: 1.6px;
+    padding: 1.6px 16px; } }
+
+.blackbox {
+  background-color: black;
+  padding: 10px; }
+
+.col {
+  background-color: black;
+  color: white; }
+
+.btn-primary {
+  border: 0;
+  padding: 10px 100px;
+  margin: 10px;
+  margin-right: 0px; }
+
+.thridRow {
+  padding: 10px 0; }
+
+.bg-light {
+  padding: 0; }
+
+.mx-lg-n5 {
+  padding: 0; }
+
+h5, h6 {
+  margin-top: 8px; }
+
+.py-3 {
+  padding: 0; }
+
+.px-lg-5 {
+  padding: 10px; }
 
 @media (min-width: 576px) {
   .p-2 {
@@ -7920,16 +7992,6 @@ h2 {
     height: 32.8px;
     margin: 1.6px;
     padding: 1.6px 16px; } }
-
-.top {
-  position: fixed;
-  z-index: 3;
-  Bottom: 40px;
-  Right: 40px; }
-
-.top:hover {
-  transition: transform .25s ease-in-out;
-  transform: scale(1.2); }
 
 .service_banner {
   position: relative;
@@ -8053,3 +8115,13 @@ footer ul.social-network {
 
 .footer-menu .navbar .nav-item a {
   margin: 5px 10px; }
+
+.top {
+  position: fixed;
+  z-index: 2;
+  Bottom: 40px;
+  Right: 40px; }
+
+.top:hover {
+  transition: transform .25s ease-in-out;
+  transform: scale(1.2); }
