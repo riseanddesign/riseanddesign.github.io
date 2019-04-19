@@ -1,0 +1,551 @@
+
+// import _bootstrap.scss partial file from the node_modules
+@import 'custom-variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/aos/src/sass/aos.scss';
+
+body {
+  font-family: $body-text;
+  background-color: white;
+}
+
+//icons
+.fab {
+    width: 50px;
+}
+
+//making a class to add margin top and Bottom
+.giveMeSpace{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+//headings
+h1 {
+    font-family: $heading;
+    font-weight: bold;
+    @media (max-width: 992px) {
+        font-size: 2rem;
+    }
+    @media (max-width: 480px) {
+        font-size: 1.5rem;
+    }
+}
+h2 {
+    font-family: $sub-heading;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    @media (max-width: 992px) {
+        font-size: 1.8rem;
+    }
+} 
+
+
+//font-family
+.gotham-font {
+    font-family: $heading;
+}
+
+//seperator
+.seperator {
+    display: inline-block;
+    width: 56px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 1.5rem 0;
+}
+
+//class to make background-color light green
+.algonquinGreenLight {
+    background-color: $algonquinGreenLight;
+}
+ 
+//class to make text color dark green
+.algonquinGreenDark {
+    color: $algonquinGreenDark;
+}
+
+//bo shadow
+.box-shadow{
+  -webkit-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+}
+
+//change bootstrap class to be chosen colors
+.btn-primary {
+    background-color: $algonquinGreenLight;
+    border: 2px solid $algonquinGreenDark;
+    &:hover {
+        background-color:white !important;
+        color:black !important;
+    }
+}
+
+.btn-secondary{
+    font-family: $heading;
+    font-size: 24px;
+    background-color: $white;
+    border: none;
+    color: $algonquinGreenLight;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+    &:hover {
+      color: $algonquinGreenLight;
+      background-color: #000000;
+      -webkit-transition: all 0.5s linear 0s;
+      transition: all 0.5s linear 0s;
+    }
+    @media (max-width: 992px) {
+      font-size: 20px;
+    }
+  }
+
+//chaning styles of bootstrap cards
+.card {
+    margin: 1rem;
+    .card-text {
+        color: white;
+    }
+    .card-title {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .card-top {
+        height: 50%;
+        margin: 5px;
+        overflow: hidden;
+    }
+}
+
+//nav links
+.navbar {
+    .navbar-toggler {
+        border-color: $algonquinGreenLight;
+        border-width: 2px;
+        padding: 10px 20px;
+        outline: none !important;
+        cursor: pointer;
+        .fa-bars {
+        font-size: 24px;
+        color: $algonquinGreenLight;
+        }
+    }
+    .nav-item{
+        a{
+        position: relative;
+        padding: 0;
+        margin: 15px 25px;
+        color: $algonquinGreenLight;
+        font-size: 1.5rem;
+        text-shadow: none;
+        font-family: $heading;
+        &:before {
+            color: #fff;
+            content: attr(data-hover);
+            position: absolute;
+            -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+            -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        &:hover{
+            outline: none;
+            &:before {
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            transform: scale(0.9);
+            opacity: 0;
+            }
+        }
+        @media (max-width: 991px) {
+            font-size: 1rem;
+            margin: 10px 10px;
+        }
+        }
+    }
+}
+.logo {
+    max-width: 300px;
+    @media (max-width: 991px) {
+        max-width: 100%;
+    }
+}
+
+//changing size of bootstrap slideshow
+#mainCarousel{
+    width:90%;
+    margin-bottom:40px;
+  }
+.carousel-inner {
+    width: 100%;
+    max-height: 600px !important;
+}
+
+// -------------------------------------------------------------
+// product css
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+    p {
+        font-size: 1.2rem;
+    }
+    .h5 {
+        font-size: 1.4rem;
+    }
+    .container {
+        background-color: white;
+    }
+
+    .buy-me:hover {
+        background-color: blue !important;
+    }
+
+    .buy-me:active {
+        background-color: blue;
+    }
+
+    .buy-me {
+        background-color: $algonquinGreenLight !important;
+    }
+
+    //?????btn-lg?
+    .btn-lg {
+        background-color: $algonquinGreenLight;
+        color: white;
+    }
+
+    .rounded {
+        background-color: $algonquinGreenLight !important;
+        height: 32.8px;
+        border-radius: 5px !important;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+        text-align: center;
+    }
+
+    .text-black-box {
+        background-color: black;
+    }
+    //change the text color
+
+    .blackbox .col-12
+    .blackbox .col-sm-6 {
+        color: white;
+    }
+
+
+    //change to the full
+    .btn-primary {
+        border: 0;
+        padding: 0.1rem 1rem;
+        margin: 0.1rem;
+    }
+
+    //change H5
+    .h5 {
+        border: 0;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    //change button row
+    .button-row {
+        margin: 10px;
+    }
+
+    .paraphraes {
+        border: 0;
+        margin: 0rem;
+        padding: 0px 16px 16px 16px;
+    }
+
+    .btn:disabled {
+        width: 100%;
+        height: 32.8px;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+    }
+    .p-2 {
+        padding: 0 !important;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .p-2 {
+        padding: 0 !important;
+    }
+
+    .buy-me:hover {
+        background-color: blue !important;
+    }
+
+    .buy-me:active {
+        background-color: blue;
+    }
+
+    .buy-me {
+        background-color: $algonquinGreenLight !important;
+    }
+
+    //?????btn-lg?
+    .btn-lg {
+        background-color: $algonquinGreenLight;
+        color: white;
+    }
+
+    .rounded {
+        background-color: $algonquinGreenLight !important;
+        height: 27px;
+        border-radius: 5px !important;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+        text-align: center;
+    }
+
+    .text-black-box {
+        background-color: black;
+    }
+
+    .blackbox .col-12,
+    .blackbox .col-sm-6 {
+        color: white;
+    }
+    //change to the full
+    .btn-primary {
+        border: 0;
+        padding: 0.1rem 1rem;
+        margin: 0.1rem;
+    }
+
+    //change H5
+    .h5 {
+        border: 0;
+        margin: 1rem;
+        padding: 0;
+    }
+
+
+    //change button row
+    .button-row {
+        margin: 10px;
+    }
+
+    .paraphraes {
+        border: 0;
+        margin: 0rem;
+        padding: 0px 16px 16px 16px;
+    }
+
+    .btn:disabled {
+        width: 100%;
+        height: 32.8px;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+    }
+}
+
+// -------------------------------------------------------------
+
+//change to the black color of the second row
+.blackbox {
+    background-color: black;
+    padding:10px;}
+  
+  //change the text color
+  .col {
+    background-color: black;
+    color: white;
+  }
+  
+  //change to the full
+  .btn-primary {
+    border: 0;
+    padding: 10px 100px;
+    margin: 10px;
+    margin-right: 0px;
+  }
+  
+  //change thridRow
+  .thridRow{padding: 10px 0;}
+  
+  .bg-light{padding:0;}
+  
+  .mx-lg-n5{padding:0;}
+  h5,h6{margin-top: 8px;}
+  .py-3{padding:0}
+  .px-lg-5{padding:10px;}
+  
+  //chang the soldOut color
+  .soldOut{background-color: gray;}
+
+
+// Service page css
+.service_banner {
+    position: relative;
+    z-index: 1;
+    .overlay{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: '';
+      background-color: rgba(66, 176, 41, 0.50);
+      display: block;
+      width: 100%;
+      height: 100%;
+      filter: contrast(130%);
+      @media (max-width: 767px) {
+        background-color: transparent;
+      }
+    }
+    .image_overlay_text {
+      position: absolute;
+      left: 0;
+      bottom: -50%;
+      @media (max-width: 992px) {
+        bottom: -60%;
+      }
+      @media (max-width: 767px) {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        padding: 35px 15px 0;
+      }
+    }
+    .gradient {
+      background: $gradient-color;
+      padding: 3rem 3rem 0;
+      -webkit-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+      -moz-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+      box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+      @media (max-width: 992px) {
+        padding: 2rem;
+      }
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+    }
+  }
+  .service_content {
+    padding: 20rem 0 1rem;
+    .seperator {
+      background-color: $algonquinGreenLight;
+    }
+    img{
+      position: relative;
+      z-index: 2;
+    }
+    .img-overlay:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: $gradient-color;
+      -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.17);
+      -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.17);
+      box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.17);
+    }
+    @media (max-width: 992px) {
+      padding: 15rem 0 1rem;
+    }
+    @media (max-width: 767px) {
+      padding: 3rem 0 1rem;
+      margin: 0 2rem;
+    }
+  }
+
+  // Footer page CSS
+footer {
+    ul.social-network {
+      list-style: none;
+      display: inline-block;
+      margin-left:0;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin: 0 5px;
+        a {
+          background-color: #343a40; 
+          display:inline-block;
+          position:relative;
+          margin: 0 auto;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
+          border-radius:50%;
+          text-align:center;
+          width: 50px;
+          height: 50px;
+          font-size:20px;
+          &:hover {
+            i {
+              -moz-transform: rotate(360deg);
+              -webkit-transform: rotate(360deg);
+              -ms--transform: rotate(360deg);
+              transform: rotate(360deg);
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              -ms-transition: all 0.2s;
+              transition: all 0.2s;
+            }
+          }
+          i {
+            margin:0;
+            line-height:50px;
+            text-align: center;
+            color: #fff;
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            -ms-transition: all 0.8s;
+            transition: all 0.8s;
+          }
+          &.Facebook{
+            &:hover {
+              background-color: $facebook;
+            }
+          }
+          &.Twitter{
+            &:hover {
+              background-color: $twitter;
+            }
+          }
+          &.Youtube{
+            &:hover {
+              background-color: $youtube;
+            }
+          }
+        }
+      } 
+    }
+  }
+  .footer-menu {
+    .navbar {
+      .nav-item {
+        a {
+          margin: 5px 10px;
+        }
+      }
+    }
+  }
+
+  //to the Top
+.top {
+    position: fixed;
+    z-index: 2;
+    Bottom: 40px;
+    Right: 40px;
+}
+
+.top:hover {
+    transition: transform .25s ease-in-out;
+    transform: scale(1.2);
+}
