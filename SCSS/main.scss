@@ -3,10 +3,7 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/aos/src/sass/aos.scss';
 body {
-    background-color: white; // Extra large devices (large desktops, 1200px and up)
-    // @include media-breakpoint-up(xl) {
-    //    }
-    // }
+    background-color: white;
 }
 
 .row {
@@ -83,104 +80,206 @@ body {
 
 // -------------------------------------------------------------
 // product css
-//change to the black color of the second row
-.blackbox {
-    background-color: black;
-    padding: 10px;
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .logo-img {
+        width: 100%;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .h5 {
+        font-size: 1.4rem;
+    }
+    .container {
+        background-color: white;
+    }
+    .row {
+        padding: 0 0.5rem 0 0.5rem;
+        margin: 0 auto;
+    }
+
+    .buy-me:hover {
+        background-color: blue !important;
+    }
+
+    .buy-me:active {
+        background-color: blue;
+    }
+
+    .buy-me {
+        background-color: $algonquinGreenLight !important;
+    }
+
+    //?????btn-lg?
+    .btn-lg {
+        background-color: $algonquinGreenLight;
+        color: white;
+    }
+
+    .rounded {
+        background-color: $algonquinGreenLight !important;
+        height: 32.8px;
+        border-radius: 5px !important;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+        text-align: center;
+    }
+
+    .text-black-box {
+        background-color: black;
+    }
+    //change the text color
+    .col-12 {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .col-sm-6 {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    //change to the full
+    .btn-primary {
+        border: 0;
+        padding: 0.1rem 1rem;
+        margin: 0.1rem;
+    }
+
+    //change H5
+    .h5 {
+        border: 0;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .row {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    //change button row
+    .button-row {
+        margin: 10px;
+    }
+
+    .paraphraes {
+        border: 0;
+        margin: 0rem;
+        padding: 0px 16px 16px 16px;
+    }
+
+    .btn:disabled {
+        width: 100%;
+        height: 32.8px;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+    }
+    .p-2 {
+        padding: 0 !important;
+    }
 }
 
-//change the text color
-.col {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .p-2 {
+        padding: 0 !important;
+    }
+    .row {
+        padding: 0 0.5rem 0 0.5rem;
+        margin: 0 auto;
+    }
+
+    .buy-me:hover {
+        background-color: blue !important;
+    }
+
+    .buy-me:active {
+        background-color: blue;
+    }
+
+    .buy-me {
+        background-color: $algonquinGreenLight !important;
+    }
+
+    //?????btn-lg?
+    .btn-lg {
+        background-color: $algonquinGreenLight;
+        color: white;
+    }
+
+    .rounded {
+        background-color: $algonquinGreenLight !important;
+        height: 27px;
+        border-radius: 5px !important;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+        text-align: center;
+    }
+
+    .text-black-box {
+        background-color: black;
+    }
+    //change the text color
+    .col-12 {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .col-sm-6 {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    //change to the full
+    .btn-primary {
+        border: 0;
+        padding: 0.1rem 1rem;
+        margin: 0.1rem;
+    }
+
+    //change H5
+    .h5 {
+        border: 0;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .row {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    //change button row
+    .button-row {
+        margin: 10px;
+    }
+
+    .paraphraes {
+        border: 0;
+        margin: 0rem;
+        padding: 0px 16px 16px 16px;
+    }
+
+    .btn:disabled {
+        width: 100%;
+        height: 32.8px;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+    }
 }
 
-//change to the full
-.btn-primary {
-    border: 0;
-    padding: 0.1rem 1rem;
-    margin: 0.1rem;
-}
-
-//change H5
-.h5 {
-    border: 0;
-    margin: 1rem;
-    padding: 0;
-}
-
-.row {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-//change button row
-.button-row {
-    margin: 10px;
-}
-
-.paraphraes {
-    border: 0;
-    margin: 0rem 1rem 1rem 1rem;
-    padding: 0;
-}
-
-//nav links
-
-
-.buy-me:hover {
-    background-color: $algonquinGreenLight;
-}
-
-.buy-me:active {
-    background-color: blue;
-}
-
-.buy-me {
-    background-color: $algonquinGreenLight;
-}
-
-.btn-lg{
-    background-color: $algonquinGreenLight;
-    color: white;
-}
-
-.rounded{
-  background-color:  $algonquinGreenLight;
-  height: 32.8px;
-  border-radius:5px !important;
-  margin: 1.6px;padding: 1.6px  16px ;
-  text-align: center;
-}
-
-.btn:disabled{
-  width: 100%;
-  height: 32.8px;
-  margin: 1.6px;
-  padding: 1.6px  16px ;
-
-}
-
-
-// //change thridRow
-// .thridRow{padding: 10px 0;}
-//
-// .bg-light{padding:0;}
-//
-// .mx-lg-n5{padding:0;}
-// h5,h6{margin-top: 8px;}
-// .py-3{padding:0}
-// .px-lg-5{padding:10px;}
-//
-// //chang the soldOut color
-// .soldOut{background-color: gray;
-// width:100%;}
-// .soldOut :hover{background-color: gray;
-// }
 //to the Top
 .top {
     position: fixed;
@@ -193,56 +292,3 @@ body {
     transition: transform .25s ease-in-out;
     transform: scale(1.2);
 }
-
-
-
-//_____________________________________________________
-// Service page css
-// .service_banner {
-//   position: relative;
-//   z-index: 1;
-//   .overlay{
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     content: '';
-//     background-color: rgba(66, 176, 41, 0.50);
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     filter: contrast(130%);
-//   }
-//   .image_overlay_text {
-//     position: absolute;
-//     left: 0;
-//     bottom: -50%;
-//   }
-//   .gradient {
-//     background: $gradient-color;
-//     padding: 4rem 3rem 0;
-//   }
-// }
-// .service_content {
-//   padding: 18rem 0 1rem;
-//   .seperator {
-//     background-color: $algonquinGreenLight;
-//   }
-//   img{
-//     position: relative;
-//     z-index: 2;
-//   }
-//   .img-overlay:before{
-//     content: '';
-//     display: block;
-//     position: absolute;
-//     top: -15px;
-//     left: -15px;
-//     right: 0;
-//     bottom: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: $gradient-color;
-//   }
-// }
