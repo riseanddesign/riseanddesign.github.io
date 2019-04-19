@@ -3,6 +3,7 @@
 @import 'custom-variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/aos/src/sass/aos.scss';
+
 body {
   font-family: $body-text;
   background-color: white;
@@ -35,7 +36,7 @@ body {
 .algonquinGreenLight {
     background-color: $algonquinGreenLight;
 }
-
+ 
 //class to make text color dark green
 .algonquinGreenDark {
     color: $algonquinGreenDark;
@@ -96,9 +97,7 @@ body {
 // product css
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .logo-img {
-        width: 100%;
-    }
+
     p {
         font-size: 1.2rem;
     }
