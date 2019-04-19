@@ -1,9 +1,11 @@
+
 // import _bootstrap.scss partial file from the node_modules
 @import 'custom-variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/aos/src/sass/aos.scss';
 body {
-    background-color: white;
+  font-family: $body-text;
+  background-color: white;
 }
 
 .row {
@@ -13,6 +15,11 @@ body {
 //icons
 .fab {
     width: 50px;
+}
+
+//font-family
+.gotham-font {
+  font-family: $heading;
 }
 
 //seperator
@@ -32,6 +39,13 @@ body {
 //class to make text color dark green
 .algonquinGreenDark {
     color: $algonquinGreenDark;
+}
+
+//bo shadow
+.box-shadow{
+  -webkit-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
 }
 
 //change bootstrap class to be chosen colors

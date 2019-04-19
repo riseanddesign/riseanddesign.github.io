@@ -1,204 +1,253 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <!-- Responsive meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Student Design Agency</title>
     <!-- Favicon Image -->
     <link rel="icon" type="image/x-icon" href="images/Favicon.ico">
+    <base href="/">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/fontstylesheet.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="./css/min/main.css">
-  </head>
-  <body>
+</head>
+
+<body>
 
     <!--navbar that turns to hamburger in mobile view-->
-<nav class="d-none d-lg-block d-xl-block">
-    <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
- <li class="nav-item ">
-   <a class="nav-link" href="index.html">Home</a>
- </li>
- <li class="nav-item">
-   <a class="nav-link active" href="services.html">Services</a>
- </li>
- <li class="nav-item">
-   <a class="nav-link" href="products.html">Products</a>
- </li>
- <li class="nav-item">
-   <a class="nav-link" href="contact.html" >Contact</a>
- </li>
- <li class="nav-item">
-   <a class="nav-link" href="#" >Algonquin College</a>
- </li>
-</ul>
-</nav>
+    <nav class="d-none d-lg-block d-xl-block">
+        <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
+            <li class="nav-item ">
+                <a class="nav-link" data-hover="Home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-hover="Services" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Products" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Contact" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Algonquin College" href="#">Algonquin College</a>
+            </li>
+        </ul>
+    </nav>
 
-<!--hambuger menu for mobile view-->
-<div class="pos-f-t  d-lg-none text-center">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
-   <li class="nav-item col-sm-12">
-     <a class="nav-link" href="index.html">Home</a>
-   </li>
-   <li class="nav-item col-sm-12 ">
-     <a class="nav-link active" href="services.html">Services</a>
-   </li>
-   <li class="nav-item col-sm-12">
-     <a class="nav-link" href="products.html">Products</a>
-   </li>
-   <li class="nav-item col-sm-12">
-     <a class="nav-link" href="contact.html" >Contact</a>
-   </li>
-   <li class="nav-item col-sm-12">
-     <a class="nav-link" href="#" >Algonquin College</a>
-   </li>
-
-  </ul>
+    <!--hambuger menu for mobile view-->
+    <div class="pos-f-t  d-lg-none text-center">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-lg-4">
+                <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
+                    <li class="nav-item col-sm-12">
+                        <a class="nav-link" data-hover="Home" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item col-sm-12 ">
+                        <a class="nav-link active" data-hover="Services" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item col-sm-12">
+                        <a class="nav-link" data-hover="Products" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item col-sm-12">
+                        <a class="nav-link" data-hover="Contact" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item col-sm-12">
+                        <a class="nav-link" data-hover="Algonquin College" href="#">Algonquin College</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark d-flex justify-content-center py-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+        </nav>
     </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-</div>
-<!--hambuger menu end-->
-<!--navbar-->
+    <!--hambuger menu end-->
 
-<div class="container-fluid">
-    <div class="row d-flex">
-        <div class="col-lg-4 col-sm-6">
-          <img src="../images/logo.png" width="100%"class="d-block " alt="...">
-        </div>
-        <div class="col-lg-8 col-sm-6 text-center d-md-flex align-items-center justify-content-end ">
-          <h1 class="algonquinGreenDark">Services</h1>
-        </div>
-      </div>
-</div>
-
-<!-- services page body content here -->
-<section class="service_banner">
-  <img src="./images/services_banner.png" class="img-fluid" alt="services_banner">
-  <div class="overlay"></div>
-  <div class="container-fluid image_overlay_text">
-    <div class="row justify-content-center">
-        <div class="col-lg-3 p-0">
-            <img src="./images/services_banner_overlay_image.png" class="img-fluid" alt="services_banner_overlay_image">
-          </div>
-          <div class="col-lg-3 gradient">
-            <h2>What We Do</h2>
-            <div class="seperator"></div>
-            <p>Check Program Availability.
-              Tuition and Fee Estimator.
-              Try Our Career Tools to Help You Choose a Program.</p>
-              <button class="btn btn-secondary">Contact Us</button>
-          </div>
-    </div>   
-  </div>
-</section>
-
-<section class="service_content">
-  <div class="container">
-    <div class="row justify-content-start">
-        <div class="col-lg-4 img-overlay p-0">
-          <img src="./images/service01.png" class="d-block w-100" alt="...">
-        </div>
-        <div class=" col-lg-4 text-left align-self-center ml-lg-4">
-          <h2>Services</h2>
-          <div class="seperator"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-      <div class="row justify-content-end">
-        <div class="col-lg-4 img-overlay p-0 order-lg-1">
-          <img src="./images/service01.png" class="d-block w-100" alt="...">
-        </div>
-        <div class=" col-lg-4 text-right align-self-center mr-lg-4">
-          <h2>Services</h2>
-          <div class="seperator"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-      <div class="row justify-content-start">
-        <div class="col-lg-4 img-overlay p-0">
-          <img src="./images/service01.png" class="d-block w-100" alt="...">
-        </div>
-        <div class=" col-lg-4 text-left align-self-center ml-lg-4">
-          <h2>Services</h2>
-          <div class="seperator"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-      <div class="row justify-content-end">
-          <div class="col-lg-4 img-overlay p-0 order-lg-1">
-            <img src="./images/service01.png" class="d-block w-100" alt="...">
-          </div>
-          <div class=" col-lg-4 text-right align-self-center mr-lg-4">
-            <h2>Services</h2>
-            <div class="seperator"></div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-start">
-            <div class="col-lg-4 img-overlay p-0">
-              <img src="./images/service01.png" class="d-block w-100" alt="...">
+    <!--navbar-->
+    <div class="container-fluid">
+        <div class="row d-flex p-lg-4 p-sm-3 py-3 align-items-center">
+            <div class="col-lg-4 col-sm-6 col-md-4 col-7">
+                <a href="./index.html"><img src="../images/logo.png" class="img-fluid logo" alt="logo"></a>
             </div>
-            <div class=" col-lg-4 text-left align-self-center ml-lg-4">
-              <h2>Services</h2>
-              <div class="seperator"></div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+            <div class="col-lg-8 col-sm-6 col-md-8 col-5 text-right text-sm-right d-md-flex align-items-center justify-content-end ">
+                <h1 class="algonquinGreenDark m-0">Services</h1>
             </div>
-          </div>
-  </div>
-</section>
-<!-- services page body content end -->
+        </div>
+    </div>
 
-<!-- social icons-->
-<div class="container-fluid algonquinGreenLight text-center" >
-  <br></br>
-<i class="fab fa-facebook-square"></i>
-<i class="fab fa-twitter-square"></i>
-<i class="fab fa-youtube-square"></i>
-<br></br>
-</div>
-<!-- end of social icons-->
+    <!-- services page body content here -->
+    <section class="service_banner">
+        <img src="./images/services/services_banner.png" class="img-fluid" alt="services_banner">
+        <div class="overlay"></div>
+        <div class="container-fluid image_overlay_text">
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-5 d-none d-md-block p-0 box-shadow">
+                    <img src="./images/services/services_banner_overlay_image.png" class="img-fluid" alt="services_banner_overlay_image">
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9 col-10 gradient">
+                    <h2>What We Do</h2>
+                    <div class="seperator"></div>
+                    <p>Check Program Availability. Tuition and Fee Estimator. Try Our Career Tools to Help You Choose a Program.</p>
+                    <button class="btn btn-secondary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- footer section -->
-<ul id="footer" class="nav justify-content-center navbar navbar-dark bg-dark">
-<li class="nav-item">
-  <a class="nav-link " href="index.html">Home</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link active" href="services.html">Services</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="products.html">Products</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="contact.html" >Contact</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="#" >Algonquin College</a>
-</li>
-</ul>
-<!-- end of footer -->
+    <section class="service_content">
+        <div class="container">
+            <div class="row justify-content-start pb-4 pb-md-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 img-overlay p-0 ml-lg-3">
+                    <img src="./images/services/service01.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="col-xl-4 mr-xl-auto col-lg-5 mr-lg-auto col-md-6 col-12 text-md-left align-self-center text-center ml-lg-4 pt-4 pt-md-0">
+                    <h2>Animation</h2>
+                    <div class="seperator"></div>
+                    <p>
+                      This three-year Ontario College Advanced Diploma program provideas students with training in traditional, 3D, 2D tradigital and video game animation techniques. The program of study includes animation, life drawing and design courses.
+                      <br/>
+                      <br/>
+                      <b>Duration:</b> 3 Years <br/>  
+                      <b>Program Fees:</b> $3,069.58 <br>
+                      <b>Area Of Interest:</b> Arts and Design <br>
+                      <b>Program Code:</b> 1288X01FWO
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-end pb-4 pb-md-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 img-overlay p-0 ml-lg-3 order-md-1">
+                    <img src="./images/services/service02.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="col-xl-4 ml-xl-auto col-lg-5 ml-lg-auto col-md-5 text-md-right align-self-center text-center mr-lg-4 mr-md-3 pt-4 pt-md-0">
+                    <h2>Graphic Design</h2>
+                    <div class="seperator"></div>
+                    <p>
+                        This dynamic and challenging three-year Ontario College Advanced Diploma program is designed for individuals who are interested in applying their creativity to communicating ideas and concepts in both print and interactive media.
+                      <br/>
+                      <br/>
+                      <b>Duration:</b> 3 Years <br/>  
+                      <b>Program Fees:</b> $3,069.58 <br>
+                      <b>Area Of Interest:</b> Arts and Design <br>
+                      <b>Program Code:</b> 1400X01FWO
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-start pb-4 pb-md-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 img-overlay p-0 ml-lg-3">
+                    <img src="./images/services/service03.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="col-xl-4 mr-xl-auto col-lg-5 mr-lg-auto col-md-6 col-12 text-md-left align-self-center text-center ml-lg-4 pt-4 pt-md-0">
+                    <h2>Game Development</h2>
+                    <div class="seperator"></div>
+                    <p>
+                        This three-year Ontario College Advanced Diploma program prepares students for careers as game developers, a profession in demand by various industries including entertainment, education, government and consumer products.
+                      <br/>
+                      <br/>
+                      <b>Duration:</b> 3 Years <br/>  
+                      <b>Program Fees:</b> $3,069.58 <br>
+                      <b>Area Of Interest:</b> Arts and Design <br>
+                      <b>Program Code:</b> 3013X01FWO
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-end pb-4 pb-md-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 img-overlay p-0 ml-lg-3 order-md-1">
+                    <img src="./images/services/service04.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="col-xl-4 ml-xl-auto col-lg-5 ml-lg-auto col-md-5 text-md-right align-self-center text-center mr-lg-4 mr-md-3 pt-4 pt-md-0">
+                    <h2>Illustration</h2>
+                    <div class="seperator"></div>
+                    <p>
+                        This two-year Ontario College Diploma program delivered in a condensed format over 45 weeks prepares graduates for entry into the traditional field of illustration, as well as the emerging field of concept art.
+                      <br/>
+                      <br/>
+                      <b>Duration:</b> 45 Weeks <br/>  
+                      <b>Program Fees:</b> $2,016.72 <br>
+                      <b>Area Of Interest:</b> Arts and Design <br>
+                      <b>Program Code:</b> 1408X04FWO
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-start pb-4 pb-md-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 img-overlay p-0 ml-lg-3">
+                    <img src="./images/services/service05.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="col-xl-4 mr-xl-auto col-lg-5 mr-lg-auto col-md-6 col-12 text-md-left align-self-center text-center ml-lg-4 pt-4 pt-md-0">
+                    <h2>Music</h2>
+                    <div class="seperator"></div>
+                    <p>
+                        This two-year Ontario College Diploma program delivered in a condensed format over 45 weeks prepares students to work as producers, engineers and music professionals in today`s music industry. 
+                      <br/>
+                      <br/>
+                      <b>Duration:</b> 45 Weeks <br/>  
+                      <b>Program Fees:</b> $3,069.58 <br>
+                      <b>Area Of Interest:</b> Media and Communications <br>
+                      <b>Program Code:</b> 1405X04FWOt
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services page body content end -->
+    
+    <!-- Footer section -->
+    <footer class="algonquinGreenLight py-5">
+      <!-- social icons-->
+      <div class="container-fluid text-center">
+          <h2 class="text-uppercase text-light gotham-font">Social Links</h2>
+          <ul class="social-network social-circle mt-3 mb-0">
+            <li>
+              <a href="http://www.facebook.com" class="Facebook" target="_blank" title="Facebook">
+                  <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+                <a href="http://www.twitter.com" class="Twitter" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                  <a href="http://www.Youtube.com" class="Youtube" target="_blank" title="Youtube">
+                      <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+          </ul>
+      </div>
+      <!-- end of social icons-->
+    </footer>
+    
+    <section class="footer-menu bg-dark text-center py-3">
+        <ul id="footer" class="nav justify-content-center navbar">
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Services" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Products" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Contact" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Algonquin College" href="#">Algonquin College</a>
+            </li>
+        </ul>
+        <p class="text-light gotham-font">Student Design Agency &copy; 2019</p>
+    </section>
+    
+    <!-- end of footer -->  
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
