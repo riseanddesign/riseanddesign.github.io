@@ -2,7 +2,11 @@
 @import 'custom-variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 body {
+<<<<<<< HEAD
   background-color: white;
+=======
+    background-color: white;
+>>>>>>> development--Wei
 }
 
 //icons
@@ -145,6 +149,7 @@ margin:1rem;
 }
 
 // -------------------------------------------------------------
+<<<<<<< HEAD
 
 //change to the black color of the second row
 .blackbox {
@@ -177,7 +182,208 @@ h5,h6{margin-top: 8px;}
 
 //chang the soldOut color
 .soldOut{background-color: gray;}
+=======
+// product css
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .logo-img {
+        width: 100%;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .h5 {
+        font-size: 1.4rem;
+    }
+    .container {
+        background-color: white;
+    }
+    .row {
+        padding: 0 0.5rem 0 0.5rem;
+        margin: 0 auto;
+    }
 
+    .buy-me:hover {
+        background-color: blue !important;
+    }
+
+    .buy-me:active {
+        background-color: blue;
+    }
+
+    .buy-me {
+        background-color: $algonquinGreenLight !important;
+    }
+
+    //?????btn-lg?
+    .btn-lg {
+        background-color: $algonquinGreenLight;
+        color: white;
+    }
+
+    .rounded {
+        background-color: $algonquinGreenLight !important;
+        height: 32.8px;
+        border-radius: 5px !important;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+        text-align: center;
+    }
+
+    .text-black-box {
+        background-color: black;
+    }
+    //change the text color
+    .col-12 {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .col-sm-6 {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    //change to the full
+    .btn-primary {
+        border: 0;
+        padding: 0.1rem 1rem;
+        margin: 0.1rem;
+    }
+
+    //change H5
+    .h5 {
+        border: 0;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .row {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    //change button row
+    .button-row {
+        margin: 10px;
+    }
+
+    .paraphraes {
+        border: 0;
+        margin: 0rem;
+        padding: 0px 16px 16px 16px;
+    }
+
+    .btn:disabled {
+        width: 100%;
+        height: 32.8px;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+    }
+    .p-2 {
+        padding: 0 !important;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .p-2 {
+        padding: 0 !important;
+    }
+    .row {
+        padding: 0 0.5rem 0 0.5rem;
+        margin: 0 auto;
+    }
+
+    .buy-me:hover {
+        background-color: blue !important;
+    }
+
+    .buy-me:active {
+        background-color: blue;
+    }
+
+    .buy-me {
+        background-color: $algonquinGreenLight !important;
+    }
+
+    //?????btn-lg?
+    .btn-lg {
+        background-color: $algonquinGreenLight;
+        color: white;
+    }
+
+    .rounded {
+        background-color: $algonquinGreenLight !important;
+        height: 27px;
+        border-radius: 5px !important;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+        text-align: center;
+    }
+
+    .text-black-box {
+        background-color: black;
+    }
+    //change the text color
+    .col-12 {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .col-sm-6 {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    //change to the full
+    .btn-primary {
+        border: 0;
+        padding: 0.1rem 1rem;
+        margin: 0.1rem;
+    }
+>>>>>>> development--Wei
+
+    //change H5
+    .h5 {
+        border: 0;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .row {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    //change button row
+    .button-row {
+        margin: 10px;
+    }
+
+    .paraphraes {
+        border: 0;
+        margin: 0rem;
+        padding: 0px 16px 16px 16px;
+    }
+
+    .btn:disabled {
+        width: 100%;
+        height: 32.8px;
+        margin: 1.6px;
+        padding: 1.6px 16px;
+    }
+}
 
 //to the Top
 .top{
@@ -191,6 +397,7 @@ Right: 40px;
     transition: transform .25s ease-in-out;
     transform: scale(1.2);
 }
+<<<<<<< HEAD
 
 
 // Service page css
@@ -242,3 +449,5 @@ Right: 40px;
     background: $gradient-color;
   }
 }
+=======
+>>>>>>> development--Wei
