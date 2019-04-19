@@ -1,7 +1,9 @@
+
 // import _bootstrap.scss partial file from the node_modules
 @import 'custom-variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 body {
+  font-family: $body-text;
   background-color: white;
 }
 
@@ -12,12 +14,27 @@ body {
 
 //headings
 h1 {
-  @media (max-width: 991px) {
+  font-family: $heading;
+  font-weight: bold;
+  @media (max-width: 992px) {
     font-size: 2rem;
   }
   @media (max-width: 480px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
+}
+h2 {
+  font-family: $sub-heading;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  @media (max-width: 992px) {
+    font-size: 1.8rem;
+  }
+}
+
+//font-family
+.gotham-font {
+  font-family: $heading;
 }
 
 //seperator
@@ -39,20 +56,40 @@ h1 {
 color:$algonquinGreenDark;
 }
 
+//bo shadow
+.box-shadow{
+  -webkit-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+}
+
 //change bootstrap class to be chosen colors
 .btn-primary{
   background-color:$algonquinGreenLight;
   border:2px solid $algonquinGreenDark;
 }
 .btn-secondary{
+  font-family: $heading;
+  font-size: 24px;
   background-color: $white;
-  border-color: #ffffff;
+  border: none;
   color: $algonquinGreenLight;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+  &:hover {
+    color: $algonquinGreenLight;
+    background-color: #000000;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+  }
+  @media (max-width: 992px) {
+    font-size: 20px;
+  }
 }
 
 //chaning styles of bootstrap cards
 .card{
-margin:1rem;
+    margin:1rem;
     .card-text{
       color:white;
     }
@@ -83,6 +120,7 @@ margin:1rem;
   }
   .nav-item{
     a{
+      font-family: $heading;
       position: relative;
       padding: 0;
       margin: 15px 25px;
@@ -115,7 +153,7 @@ margin:1rem;
 }
 .logo {
   max-width: 300px;
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     max-width: 100%;
   }
 }
@@ -191,19 +229,40 @@ Right: 40px;
     width: 100%;
     height: 100%;
     filter: contrast(130%);
+    @media (max-width: 767px) {
+      background-color: transparent;
+    }
   }
   .image_overlay_text {
     position: absolute;
     left: 0;
     bottom: -50%;
+    @media (max-width: 992px) {
+      bottom: -60%;
+    }
+    @media (max-width: 767px) {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      padding: 35px 15px 0;
+    }
   }
   .gradient {
     background: $gradient-color;
-    padding: 4rem 3rem 0;
+    padding: 3rem 3rem 0;
+    -webkit-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.17);
+    @media (max-width: 992px) {
+      padding: 2rem;
+    }
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   }
 }
 .service_content {
-  padding: 18rem 0 1rem;
+  padding: 20rem 0 1rem;
   .seperator {
     background-color: $algonquinGreenLight;
   }
@@ -222,5 +281,90 @@ Right: 40px;
     width: 100%;
     height: 100%;
     background: $gradient-color;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.17);
+  }
+  @media (max-width: 992px) {
+    padding: 15rem 0 1rem;
+  }
+  @media (max-width: 767px) {
+    padding: 3rem 0 1rem;
+    margin: 0 2rem;
+  }
+}
+
+// Footer page CSS
+footer {
+  ul.social-network {
+    list-style: none;
+    display: inline-block;
+    margin-left:0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      a {
+        background-color: #343a40; 
+        display:inline-block;
+        position:relative;
+        margin: 0 auto;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        border-radius:50%;
+        text-align:center;
+        width: 50px;
+        height: 50px;
+        font-size:20px;
+        &:hover {
+          i {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms--transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            transition: all 0.2s;
+          }
+        }
+        i {
+          margin:0;
+          line-height:50px;
+          text-align: center;
+          color: #fff;
+          -webkit-transition: all 0.8s;
+          -moz-transition: all 0.8s;
+          -o-transition: all 0.8s;
+          -ms-transition: all 0.8s;
+          transition: all 0.8s;
+        }
+        &.Facebook{
+          &:hover {
+            background-color: $facebook;
+          }
+        }
+        &.Twitter{
+          &:hover {
+            background-color: $twitter;
+          }
+        }
+        &.Youtube{
+          &:hover {
+            background-color: $youtube;
+          }
+        }
+      }
+    } 
+  }
+}
+.footer-menu {
+  .navbar {
+    .nav-item {
+      a {
+        margin: 5px 10px;
+      }
+    }
   }
 }
