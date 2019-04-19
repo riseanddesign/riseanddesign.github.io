@@ -4,6 +4,13 @@
 @import '../node_modules/aos/src/sass/aos.scss';
 body {
   background-color: white;
+  // Extra large devices (large desktops, 1200px and up)
+// @include media-breakpoint-up(xl) {
+//    }
+// }
+
+
+
 }
 
 .row{
@@ -78,7 +85,7 @@ margin:1rem;
 }
 
 // -------------------------------------------------------------
-
+// product css
 //change to the black color of the second row
 .blackbox
 {background-color: black;
@@ -86,30 +93,72 @@ margin:1rem;
 
 //change the text color
 .col
-{background-color: black;
+{border:0;
+margin: 0;
+padding: 0;
+  background-color: black;
 color: white;}
 
 //change to the full
 .btn-primary{border: 0;
-padding: 10px 100px;
-margin: 10px;
-margin-right: 0px;}
+padding: 0.1rem 1rem;
+margin: 0.1rem;}
 
-//change thridRow
-.thridRow{padding: 10px 0;}
 
-.bg-light{padding:0;}
 
-.mx-lg-n5{padding:0;}
-h5,h6{margin-top: 8px;}
-.py-3{padding:0}
-.px-lg-5{padding:10px;}
 
-//chang the soldOut color
-.soldOut{background-color: gray;
-width:100%;}
-.soldOut :hover{background-color: gray;
+
+
+//change H5
+.h5{
+border:0;
+margin: 1rem;
+padding: 0;
 }
+
+.row{
+border:0;
+margin: 0;
+padding: 0;
+}
+
+//change button row
+.button-row{
+margin: 10px;
+}
+
+.paraphraes{
+  border:0;
+  margin: 0rem 1rem 1rem 1rem;
+  padding: 0;
+}
+
+//nav links
+.buy-me:hover{
+    background-color: $algonquinGreenLight;
+}
+.buy-me:active{
+    background-color: blue;
+}
+.buy-me{
+    background-color: $algonquinGreenLight;
+}
+
+// //change thridRow
+// .thridRow{padding: 10px 0;}
+//
+// .bg-light{padding:0;}
+//
+// .mx-lg-n5{padding:0;}
+// h5,h6{margin-top: 8px;}
+// .py-3{padding:0}
+// .px-lg-5{padding:10px;}
+//
+// //chang the soldOut color
+// .soldOut{background-color: gray;
+// width:100%;}
+// .soldOut :hover{background-color: gray;
+// }
 
 //to the Top
 .top{
@@ -125,52 +174,55 @@ Right: 40px;
 }
 
 
+
+//_____________________________________________________
+
 // Service page css
-.service_banner {
-  position: relative;
-  z-index: 1;
-  .overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: '';
-    background-color: rgba(66, 176, 41, 0.50);
-    display: block;
-    width: 100%;
-    height: 100%;
-    filter: contrast(130%);
-  }
-  .image_overlay_text {
-    position: absolute;
-    left: 0;
-    bottom: -50%;
-  }
-  .gradient {
-    background: $gradient-color;
-    padding: 4rem 3rem 0;
-  }
-}
-.service_content {
-  padding: 18rem 0 1rem;
-  .seperator {
-    background-color: $algonquinGreenLight;
-  }
-  img{
-    position: relative;
-    z-index: 2;
-  }
-  .img-overlay:before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: $gradient-color;
-  }
-}
+// .service_banner {
+//   position: relative;
+//   z-index: 1;
+//   .overlay{
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     content: '';
+//     background-color: rgba(66, 176, 41, 0.50);
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     filter: contrast(130%);
+//   }
+//   .image_overlay_text {
+//     position: absolute;
+//     left: 0;
+//     bottom: -50%;
+//   }
+//   .gradient {
+//     background: $gradient-color;
+//     padding: 4rem 3rem 0;
+//   }
+// }
+// .service_content {
+//   padding: 18rem 0 1rem;
+//   .seperator {
+//     background-color: $algonquinGreenLight;
+//   }
+//   img{
+//     position: relative;
+//     z-index: 2;
+//   }
+//   .img-overlay:before{
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     top: -15px;
+//     left: -15px;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: $gradient-color;
+//   }
+// }

@@ -7724,39 +7724,43 @@ body {
   padding: 10px; }
 
 .col {
+  border: 0;
+  margin: 0;
+  padding: 0;
   background-color: black;
   color: white; }
 
 .btn-primary {
   border: 0;
-  padding: 10px 100px;
-  margin: 10px;
-  margin-right: 0px; }
+  padding: 0.1rem 1rem;
+  margin: 0.1rem; }
 
-.thridRow {
-  padding: 10px 0; }
-
-.bg-light {
+.h5 {
+  border: 0;
+  margin: 1rem;
   padding: 0; }
 
-.mx-lg-n5 {
+.row {
+  border: 0;
+  margin: 0;
   padding: 0; }
 
-h5, h6 {
-  margin-top: 8px; }
+.button-row {
+  margin: 10px; }
 
-.py-3 {
+.paraphraes {
+  border: 0;
+  margin: 0rem 1rem 1rem 1rem;
   padding: 0; }
 
-.px-lg-5 {
-  padding: 10px; }
+.buy-me:hover {
+  background-color: #42B029; }
 
-.soldOut {
-  background-color: gray;
-  width: 100%; }
+.buy-me:active {
+  background-color: blue; }
 
-.soldOut :hover {
-  background-color: gray; }
+.buy-me {
+  background-color: #42B029; }
 
 .top {
   position: fixed;
@@ -7767,45 +7771,3 @@ h5, h6 {
 .top:hover {
   transition: transform .25s ease-in-out;
   transform: scale(1.2); }
-
-.service_banner {
-  position: relative;
-  z-index: 1; }
-  .service_banner .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: '';
-    background-color: rgba(66, 176, 41, 0.5);
-    display: block;
-    width: 100%;
-    height: 100%;
-    filter: contrast(130%); }
-  .service_banner .image_overlay_text {
-    position: absolute;
-    left: 0;
-    bottom: -50%; }
-  .service_banner .gradient {
-    background: linear-gradient(230deg, #39ff83 0%, #8fd3f4 100%);
-    padding: 4rem 3rem 0; }
-
-.service_content {
-  padding: 18rem 0 1rem; }
-  .service_content .seperator {
-    background-color: #42B029; }
-  .service_content img {
-    position: relative;
-    z-index: 2; }
-  .service_content .img-overlay:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(230deg, #39ff83 0%, #8fd3f4 100%); }
