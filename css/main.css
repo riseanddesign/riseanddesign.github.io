@@ -7689,7 +7689,7 @@ h1 {
       font-size: 1.5rem; } }
 
 h2 {
-  font-family: "freightDispMedium";
+  font-family: "GothamLightRegular";
   font-weight: bold;
   letter-spacing: 1.5px; }
   @media (max-width: 992px) {
@@ -7747,7 +7747,8 @@ h2 {
     color: white; }
   .card .card-title {
     color: white;
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-family: "GothamLightRegular"; }
   .card .card-top {
     height: 50%;
     margin: 5px;
@@ -7804,6 +7805,14 @@ h2 {
   width: 100%;
   max-height: 600px !important; }
 
+.text-black-box h4 span {
+  float: right; }
+
+.badge-light {
+  background-color: #42B029;
+  color: #ffffff;
+  font-size: 1rem; }
+
 @media (max-width: 575.98px) {
   p {
     font-size: 1.2rem; }
@@ -7821,79 +7830,41 @@ h2 {
     background-color: #42B029;
     color: white; }
   .rounded {
-    background-color: #42B029 !important;
-    height: 32.8px;
-    border-radius: 5px !important;
-    margin: 1.6px;
-    padding: 1.6px 16px;
-    text-align: center; }
+    background-color: #42B029 !important; }
   .text-black-box {
     background-color: black; }
   .blackbox .col-12 .blackbox .col-sm-6 {
     color: white; }
-  .btn-primary {
-    border: 0;
-    padding: 0.1rem 1rem;
-    margin: 0.1rem; }
-  .h5 {
-    border: 0;
-    margin: 1rem;
-    padding: 0; }
   .button-row {
     margin: 10px; }
-  .paraphraes {
-    border: 0;
-    margin: 0rem;
-    padding: 0px 16px 16px 16px; }
   .btn:disabled {
     width: 100%;
-    height: 32.8px;
     margin: 1.6px;
-    padding: 1.6px 16px; }
-  .p-2 {
-    padding: 0 !important; } }
+    padding: 1.6px 16px; } }
 
 @media (min-width: 576px) {
-  .p-2 {
-    padding: 0 !important; }
   .buy-me:hover {
     background-color: blue !important; }
   .buy-me:active {
     background-color: blue; }
   .buy-me {
-    background-color: #42B029 !important; }
+    background-color: #42B029 !important;
+    font-size: 1.3rem; }
+  .sold-out {
+    font-size: 1.3rem; }
   .btn-lg, .btn-group-lg > .btn {
     background-color: #42B029;
     color: white; }
   .rounded {
-    background-color: #42B029 !important;
-    height: 27px;
-    border-radius: 5px !important;
-    margin: 1.6px;
-    padding: 1.6px 16px;
-    text-align: center; }
+    background-color: #42B029 !important; }
   .text-black-box {
     background-color: black; }
-  .blackbox .col-12,
-  .blackbox .col-sm-6 {
+  .blackbox .col-12, .blackbox .col-sm-6 {
     color: white; }
-  .btn-primary {
-    border: 0;
-    padding: 0.1rem 1rem;
-    margin: 0.1rem; }
-  .h5 {
-    border: 0;
-    margin: 1rem;
-    padding: 0; }
   .button-row {
     margin: 10px; }
-  .paraphraes {
-    border: 0;
-    margin: 0rem;
-    padding: 0px 16px 16px 16px; }
   .btn:disabled {
     width: 100%;
-    height: 32.8px;
     margin: 1.6px;
     padding: 1.6px 16px; } }
 
@@ -7902,14 +7873,10 @@ h2 {
   padding: 10px; }
 
 .col {
-  background-color: black;
   color: white; }
 
 .btn-primary {
-  border: 0;
-  padding: 10px 100px;
-  margin: 10px;
-  margin-right: 0px; }
+  border: 0; }
 
 .thridRow {
   padding: 10px 0; }
@@ -8053,14 +8020,29 @@ footer ul.social-network {
         background-color: #ee0511; }
 
 .footer-menu .navbar .nav-item a {
+  font-size: 1rem;
   margin: 5px 10px; }
 
-.top {
+#button {
+  display: inline-block;
+  background-color: #343a40;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
   position: fixed;
-  z-index: 2;
-  Bottom: 40px;
-  Right: 40px; }
-
-.top:hover {
-  transition: transform .25s ease-in-out;
-  transform: scale(1.2); }
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+  #button img {
+    width: 80%; }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333; }
+  #button.show {
+    opacity: 1;
+    visibility: visible; }
