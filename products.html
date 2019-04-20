@@ -1,266 +1,319 @@
-  <!DOCTYPE html>
-    <html lang="en" dir="ltr">
-      <head>
-        <meta charset="utf-8">
-        <!-- Responsive meta tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Student Design Agency</title>
-        <!-- Favicon Image -->
-        <link rel="icon" type="image/x-icon" href="images/Favicon.ico">
-        <!-- Font awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <!--Animate on scroll -->
-          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <!-- CSS Files -->
-        <link rel="stylesheet" href="./css/min/main.css">
-      </head>
-      <body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-        <!--navbar that turns to hamburger in mobile view-->
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Design Agency</title>
+    <!-- Favicon Image -->
+    <link rel="icon" type="image/x-icon" href="images/Favicon.ico">
+    <base href="/">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!--Animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Fonts CSS -->
+    <link rel="stylesheet" href="./css/fontstylesheet.css" type="text/css" charset="utf-8" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/min/main.css">
+</head>
+
+<body>
+
+    <!--navbar that turns to hamburger in mobile view-->
     <nav class="d-none d-lg-block d-xl-block">
         <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
-     <li class="nav-item ">
-       <a class="nav-link active" data-hover="Home" href="index.html">Home</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" data-hover="Services" href="services.html">Services</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" data-hover="Products" href="products.html">Products</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" data-hover="Contact" href="contact.html" >Contact</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" data-hover="Algonquin College" href="#" >Algonquin College</a>
-     </li>
-    </ul>
+            <li class="nav-item ">
+                <a class="nav-link active" data-hover="Home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Services" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Products" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Contact" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-hover="Algonquin College" href="#">Algonquin College</a>
+            </li>
+        </ul>
 
     </nav>
 
-        <!-- add to the top -->
-        <a class="top" href="#"><img src="./images/top.png" alt="Top"></a>
     <!--hambuger menu for mobile view-->
     <div class="pos-f-t  d-lg-none text-center">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-lg-4">
-          <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
-       <li class="nav-item col-sm-12">
-         <a class="nav-link active" data-hover="Home" href="index.html">Home</a>
-       </li>
-       <li class="nav-item col-sm-12 ">
-         <a class="nav-link" data-hover="Services" href="services.html">Services</a>
-       </li>
-       <li class="nav-item col-sm-12">
-         <a class="nav-link" data-hover="Products" href="products.html">Products</a>
-       </li>
-       <li class="nav-item col-sm-12">
-         <a class="nav-link" data-hover="Contact" href="contact.html" >Contact</a>
-       </li>
-       <li class="nav-item col-sm-12">
-         <a class="nav-link" data-hover="Algonquin College" href="#" >Algonquin College</a>
-       </li>
-      </ul>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-lg-4">
+                <ul class="nav justify-content-center navbar navbar-dark bg-dark ">
+                    <li class="nav-item col-sm-12">
+                        <a class="nav-link active" data-hover="Home" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item col-sm-12 ">
+                        <a class="nav-link" data-hover="Services" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item col-sm-12">
+                        <a class="nav-link" data-hover="Products" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item col-sm-12">
+                        <a class="nav-link" data-hover="Contact" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item col-sm-12">
+                        <a class="nav-link" data-hover="Algonquin College" href="javascript:void(0)">Algonquin College</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <nav class="navbar navbar-dark bg-dark d-flex justify-content-center py-3">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fa fa-bars"></span>
-        </button>
-      </nav>
+        <nav class="navbar navbar-dark bg-dark d-flex justify-content-center py-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+        </nav>
     </div>
     <!--hambuger menu end-->
     <!--navbar-->
     <div class="container-fluid">
-      <div class="row d-flex p-lg-4 p-sm-3 py-3 align-items-center">
-        <div class="col-lg-4 col-sm-6 col-md-4 col-7">
-          <img src="../images/logo.png" class="img-fluid logo" alt="logo">
+        <div class="row d-flex p-lg-4 p-sm-3 py-3 align-items-center">
+            <div class="col-lg-4 col-sm-6 col-md-4 col-7">
+                <a href="./index.html"></a><img src="../images/logo.png" class="img-fluid logo" alt="logo"></a>
+            </div>
+            <div class="col-lg-8 col-sm-6 col-md-8 col-5 text-right text-sm-right d-md-flex align-items-center justify-content-end ">
+                <h1 class="algonquinGreenDark m-0">Products</h1>
+            </div>
         </div>
-        <div class="col-lg-8 col-sm-6 col-md-8 col-5 text-right text-sm-right d-md-flex align-items-center justify-content-end ">
-          <h1 class="algonquinGreenDark m-0">Products</h1>
-        </div>
-      </div>
     </div>
 
-    <!-- add "to the top" -->
-    <a class="top" href="#"><img src="./images/top.png" alt="Top"></a>
+     <!-- add "to the top" -->
+     <a id="button">
+        <img src="./images/top.png" alt="Top">
+    </a>
 
     <!--slider from bootstrap-->
     <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" id="mainCarousel" class=" container-fluid carousel slide " data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://cdn.pixabay.com/photo/2016/10/13/00/22/illustration-1736462_1280.png" width="100%" class="d-block w-10" alt="...">
-        </div>
-        <!-- the inner part of carousel, ie slides-->
-        <div class="carousel-item ">
-          <img src="https://cdn.pixabay.com/photo/2017/12/07/18/44/alien-3004340_1280.jpg" width="100%" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item ">
-          <img src="../imgs/fairy.jpg" width="100%" class="d-block w-100" alt="...">
-        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2016/10/13/00/22/illustration-1736462_1280.png" width="100%" class="d-block w-10" alt="...">
+            </div>
+            <!-- the inner part of carousel, ie slides-->
+            <div class="carousel-item ">
+                <img src="https://cdn.pixabay.com/photo/2017/12/07/18/44/alien-3004340_1280.jpg" width="100%" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <img src="../imgs/fairy.jpg" width="100%" class="d-block w-100" alt="...">
+            </div>
 
-
-      </div><!--carousel inner-->
-      </div>
-      <!--slider from bootstrap-->
+        </div>
+        <!--carousel inner-->
+    </div>
+    <!--slider from bootstrap-->
 
     <!-- green bar under slideshow -->
-      <div class="container-fluid algonquinGreenLight giveMeSpace" >
-    <br></br>
+    <div class="container-fluid algonquinGreenLight giveMeSpace">
+        <br></br>
     </div>
     <!-- end of green bar -->
 
-
-
     <!-- product page body content here -->
     <!--first div for wrapping-->
-    <div class="container">
-        <!--second div for create 3 rows; the first row put image-->
-        <div class="row  ">
-            <!--columns-->
-            <div class="col-12 col-sm-6" data-aos="fade-in">
-                <!--image-->
-                <img src="https://media3.giphy.com/media/3o7525Zdrheax8pKOk/giphy.gif" class="img-fluid d-flex p-2" alt="Responsive image">
-                <!--4th div for create 2 columns inside of the 3th row-->
-                <div class="row text-black-box">
-                    <p class="h5 col">Animation and Video</p>
-                    <p class="h5 col">By: Aerin</p>
+    <section class="py-5">
+        <div class="container">
+            <!--second div for create 3 rows; the first row put image-->
+            <div class="row mb-4">
+                <!--columns-->
+                <div class="col-12 col-md-6" data-aos="fade-in">
+                    <!--image-->
+                    <img src="https://media3.giphy.com/media/3o7525Zdrheax8pKOk/giphy.gif" class="img-fluid" alt="Responsive image">
+                    <!--4th div for create 2 columns inside of the 3th row-->
+                    <div class="text-black-box p-4 text-light">
+                        <h4>
+                            Animation and Video
+                            <span class="small text-muted">By: Aerin</span>
+                        </h4>
+                        <p class="paraphraes text-black-box">Using AE to create a dog having a bag.</p>
+                    </div>
+                   
+                    <!--5th div for create 2 columns inside of the 4th row-->
+                    <div class="row pt-2">
+                        <div class="col-6 col-md-3 col-sm-6">
+                            <span class="d-block badge badge-light h3 py-3">9.99$</span>
+                        </div>
+                        <div class="col-6 col-md-9 col-sm-6">
+                            <button type="button" class="btn btn-primary btn-block buy-me py-2">Buy Me!</button>
+                        </div>                        
+                    </div>
                 </div>
-                <p class="paraphraes text-black-box">Using AE to create a dog having a bag.</p>
-                <!--5th div for create 2 columns inside of the 4th row-->
-                <div class="row button-row ">
-                    <p class="col rounded  ">9.99$</p>
-                    <button type="button" class="col btn btn-primary buy-me">Buy Me!</button>
-                </div>
-            </div>
-            <!--columns-->
-            <div class="col-12 col-sm-6" data-aos="fade-in">
-                <!--image-->
-                <img src="https://i.pinimg.com/736x/23/59/79/23597952172907ae757aa537eb88ce35--northwest-airlines-vintage-airline.jpg" class="img-fluid d-flex p-2" alt="Responsive image">
-                <!--4th div for create 2 columns inside of the 3th row-->
-                <div class="row text-black-box">
-                    <p class="h5 col">Best logo ides</p>
-                    <p class="h5 col">By: Amari</p>
-                </div>
-                <p class="paraphraes text-black-box">The best logo makes best first impressions.</p>
-                <!--5th div for create 2 columns inside of the 4th row-->
-                <div class="row button-row">
-                    <p class="col rounded ">9.99$</p>
-                    <button type="button" class="col btn btn-primary buy-me">Buy Me!</button>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <!--columns-->
-            <div class="col-12 col-sm-6" data-aos="fade-in">
-                <!--image-->
-                <img src="https://s3.amazonaws.com/cdn.roosterteeth.com/uploads/images/5e7ac61d-bb6e-46d7-aee7-a2e64947c3d3/original/2186424-1502661039769-20170813_234938.png" class="img-fluid d-flex p-2" alt="Responsive image">
-                <!--4th div for create 2 columns inside of the 3th row-->
-                <div class="row text-black-box">
-                    <p class="h5 col">May</p>
-                    <p class="h5 col">By: Binx</p>
-                </div>
-                <p class="paraphraes text-black-box">  Character</p>
-                <!--5th div for create 2 columns inside of the 4th row-->
-                <div class="row button-row ">
-                    <p class="col rounded ">9.99$</p>
-                    <button type="button" class="col btn btn-primary buy-me">Buy Me!</button>
+                <!--columns-->
+                <div class="col-12 col-md-6" data-aos="fade-in">
+                    <!--image-->
+                    <img src="https://i.pinimg.com/736x/23/59/79/23597952172907ae757aa537eb88ce35--northwest-airlines-vintage-airline.jpg" class="img-fluid" alt="Responsive image">
+                    <!--4th div for create 2 columns inside of the 3th row-->
+                    <div class="text-black-box p-4 text-light">
+                        <h4>
+                            Best logo ides
+                            <span class="small text-muted">By: Amari</span>
+                        </h4>
+                        <p class="paraphraes text-black-box">The best logo makes best first impressions.</p>
+                    </div>
+                    <!--5th div for create 2 columns inside of the 4th row-->
+                    <div class="row pt-2">
+                        <div class="col-6 col-md-3 col-sm-6">
+                            <span class="d-block badge badge-light h3 py-3">9.99$</span>
+                        </div>
+                        <div class="col-6 col-md-9 col-sm-6">
+                            <button type="button" class="btn btn-primary btn-block buy-me py-2">Buy Me!</button>
+                        </div> 
+                    </div>
                 </div>
             </div>
-            <!--columns-->
-            <div class="col-12 col-sm-6" data-aos="fade-in">
-                <!--image-->
-                <img src="https://da4pli3l5vc0d.cloudfront.net/80/67/8067ae63f5ed9ea2bdaf12bed3c15f7063fb618d/h=300/?app=portal&sig=51bb5d0af651d7aec4a10085af72a45b1861319cd3f8649845ba7095250d4d73" class="img-fluid d-flex p-2" alt="Responsive image">
-                <!--4th div for create 2 columns inside of the 3th row-->
-                <div class="row text-black-box">
-                    <p class="h5 col">Soldier Character</p>
-                    <p class="h5 col">By: Bohan</p>
+            <div class="row mb-4">
+                <!--columns-->
+                <div class="col-12 col-md-6" data-aos="fade-in">
+                    <!--image-->
+                    <img src="https://s3.amazonaws.com/cdn.roosterteeth.com/uploads/images/5e7ac61d-bb6e-46d7-aee7-a2e64947c3d3/original/2186424-1502661039769-20170813_234938.png" class="img-fluid d-flex p-2" alt="Responsive image">
+                    <!--4th div for create 2 columns inside of the 3th row-->
+                    <div class="text-black-box p-4 text-light">
+                        <h4>
+                            May
+                            <span class="small text-muted">By: Binx</span>
+                        </h4>
+                        <p class="paraphraes text-black-box"> Character</p>
+                    </div>
+                    
+                    <!--5th div for create 2 columns inside of the 4th row-->
+                    <div class="row pt-2">
+                        <div class="col-6 col-md-3 col-sm-6">
+                            <span class="d-block badge badge-light h3 py-3">9.99$</span>
+                        </div>
+                        <div class="col-6 col-md-9 col-sm-6">
+                            <button type="button" class="btn btn-primary btn-block buy-me py-2">Buy Me!</button>
+                        </div> 
+                    </div>
                 </div>
-                <p class="paraphraes text-black-box">Selling a soldier character by Adobe Creative Cloud.</p>
-                <!--5th div for create 2 columns inside of the 4th row-->
-                <div class="row button-row">
-                    <p class="col rounded ">9.99$</p>
-                    <button type="button" class="col btn btn-primary buy-me">Buy Me!</button>
+                <!--columns-->
+                <div class="col-12 col-md-6" data-aos="fade-in">
+                    <!--image-->
+                    <img src="https://da4pli3l5vc0d.cloudfront.net/80/67/8067ae63f5ed9ea2bdaf12bed3c15f7063fb618d/h=300/?app=portal&sig=51bb5d0af651d7aec4a10085af72a45b1861319cd3f8649845ba7095250d4d73" class="img-fluid" alt="Responsive image">
+                    <!--4th div for create 2 columns inside of the 3th row-->
+                    <div class="text-black-box p-4 text-light">
+                        <h4>
+                            Soldier Character
+                            <span class="small text-muted">By: Bohan</span>
+                        </h4>
+                        <p class="paraphraes text-black-box">Selling a soldier character by Adobe Creative Cloud.</p>
+                    </div>
+                    
+                    <!--5th div for create 2 columns inside of the 4th row-->
+                    <div class="row pt-2">
+                        <div class="col-6 col-md-3 col-sm-6">
+                            <span class="d-block badge badge-light h3 py-3">9.99$</span>
+                        </div>
+                        <div class="col-6 col-md-9 col-sm-6">
+                            <button type="button" class="btn btn-primary btn-block buy-me py-2">Buy Me!</button>
+                        </div> 
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <!--columns-->
-            <div class="col-12 col-sm-6 "data-aos="fade-in">
-                <!--image-->
-                <img src="https://i0.wp.com/www.talkingsoundshow.com/wp-content/uploads/2018/08/180817-Delay-Free-Faux-Stereo-Mixer.png?resize=568%2C300" class="img-fluid d-flex p-2" alt="Responsive image">
-                <!--4th div for create 2 columns inside of the 3th row-->
-                <div class="row text-black-box">
-                    <p class="h5 col">Audio Clips</p>
-                    <p class="h5 col">By: Carine</p>
-                </div>
-                <p class="paraphraes text-black-box">Multiple Audio Source.</p>
-                <!--5th div for create 2 columns inside of the 4th row-->
+            <div class="row">
+                <!--columns-->
+                <div class="col-12 col-md-6 " data-aos="fade-in">
+                    <!--image-->
+                    <img src="https://i0.wp.com/www.talkingsoundshow.com/wp-content/uploads/2018/08/180817-Delay-Free-Faux-Stereo-Mixer.png?resize=568%2C300" class="img-fluid" alt="Responsive image">
+                    <!--4th div for create 2 columns inside of the 3th row-->
+                    <div class="text-black-box p-4 text-light">
+                        <h4>
+                            Audio Clips
+                            <span class="small text-muted">By: Carine</span>
+                        </h4>
+                        <p class="paraphraes text-black-box">Multiple Audio Source.</p>
+                    </div>
+                    
+                    <!--5th div for create 2 columns inside of the 4th row-->
 
-                <div class="row button-row">
-                    <p class="col rounded ">9.99$</p>
-                    <button type="button" class="col btn btn-primary buy-me">Buy Me!</button>
+                    <div class="row pt-2">
+                        <div class="col-6 col-md-3 col-sm-6">
+                            <span class="d-block badge badge-light h3 py-3">9.99$</span>
+                        </div>
+                        <div class="col-6 col-md-9 col-sm-6">
+                            <button type="button" class="btn btn-primary btn-block buy-me py-2">Buy Me!</button>
+                        </div> 
+                    </div>
                 </div>
-            </div>
-            <!--columns-->
-            <div class="col-12 col-sm-6 "data-aos="fade-in">
-                <!--image-->
-                <img src="https://myareanetwork-photos.s3.amazonaws.com/event_photos/f/340678_1549019764.jpg" class="img-fluid d-flex p-2" alt="Responsive image">
-                <!--4th div for create 2 columns inside of the 3th row-->
-                <div class="row text-black-box">
-                    <p class="h5 col">Marine Science Fest</p>
-                    <p class="h5 col">By: Oscar</p>
-                </div>
-                <p class="paraphraes text-black-box">More than 30,000 people love Oscar’s arts.</p>
-                <!--5th div for create 2 columns inside of the 4th row-->
-                <div class="row button-row">
-                    <button type="button" class="btn btn-secondary btn-lg" disabled>Sold Out!</button>
+                <!--columns-->
+                <div class="col-12 col-md-6 " data-aos="fade-in">
+                    <!--image-->
+                    <img src="https://myareanetwork-photos.s3.amazonaws.com/event_photos/f/340678_1549019764.jpg" class="img-fluid" alt="Responsive image">
+                    <!--4th div for create 2 columns inside of the 3th row-->
+                    <div class="text-black-box p-4 text-light">
+                        <h4>
+                            Marine Science Fest
+                            <span class="small text-muted">By: Oscar</span>
+                        </h4>
+                        <p class="paraphraes text-black-box">More than 30,000 people love Oscar’s arts.</p>
+                    </div>
+                    
+                    <!--5th div for create 2 columns inside of the 4th row-->
+                    <div class="row pt-2">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-secondary btn-block sold-out py-2" disabled>Sold Out!</button>
+                        </div>                        
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>  
     <!-- product page body content end here -->
 
-    <!-- social icons-->
-    <div class="container-fluid algonquinGreenLight text-center" >
-      <br></br>
-    <i class="fab fa-facebook-square"></i>
-    <i class="fab fa-twitter-square"></i>
-    <i class="fab fa-youtube-square"></i>
-    <br></br>
-    </div>
-    <!-- end of social icons-->
+    <!-- Footer section -->
+    <footer class="algonquinGreenLight py-5">
+        <!-- social icons-->
+        <div class="container-fluid text-center">
+            <h2 class="text-uppercase text-light gotham-font">Social Links</h2>
+            <ul class="social-network social-circle mt-3 mb-0">
+                <li>
+                <a href="http://www.facebook.com" class="Facebook" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com" class="Twitter" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.Youtube.com" class="Youtube" target="_blank" title="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end of social icons-->
+        </footer>
+        
+        <section class="footer-menu bg-dark text-center py-3">
+            <ul id="footer" class="nav justify-content-center navbar">
+                <li class="nav-item">
+                    <a class="nav-link" data-hover="Home" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-hover="Services" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-hover="Products" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-hover="Contact" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-hover="Algonquin College" href="#">Algonquin College</a>
+                </li>
+            </ul>
+            <p class="text-light gotham-font">Student Design Agency &copy; 2019</p>
+        </section>
+        <!-- end of footer -->
 
-      <!-- footer section -->
-    <ul id="footer" class="nav justify-content-center navbar navbar-dark bg-dark">
-    <li class="nav-item">
-      <a class="nav-link active" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="services.html">Services</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="products.html">Products</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="contact.html" >Contact</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" >Algonquin College</a>
-    </li>
-    </ul>
-    <!-- end of footer -->
-
-    <!--Animate on scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script>
-       AOS.init();
-     </script>
     <!-- Javacript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/min/main.min.js"></script>
-      </body>
-    </html>
+</body>
+</html>
